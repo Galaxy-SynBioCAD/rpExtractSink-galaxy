@@ -7,8 +7,10 @@
     python -m rpextractsink
       '$input'
       '$output'
-      --remove_dead_end '$remove_dead_end'
       --compartment_id '$adv.compartment_id'
+      #if str($remove_dead_end) == "true":
+        --remove_dead_end
+      #end if
   ]]></command>
   <inputs>
     <param name="input" type="data" format="sbml" label="SBML" optional="false" />
