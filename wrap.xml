@@ -1,10 +1,10 @@
 <tool id="rpExtractSink" name="Sink from SBML">
   <description>Generate the RetroPath2.0 sink file from an SBML input</description>
   <requirements>
-    <requirement type="package">rpextractsink</requirement>
+    <requirement type="package">rptools</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
-    python -m rpextractsink
+    python -m rptools.rpextractsink
       '$input'
       '$output'
       --compartment_id '$adv.compartment_id'
