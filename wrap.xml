@@ -20,7 +20,7 @@
     </section>
   </inputs>
   <outputs>
-    <data name="output" format="csv" label="Sink Compounds" />
+    <data name="output" format="csv" label="${tool.name} ${input.name}" />
   </outputs>
   <help><![CDATA[
 
